@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane fx:id="GridPaneEditStation" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="romain.boitard.application.controller.ViewEditController">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Label text="nom" />
+      <Label text="étiquette" GridPane.rowIndex="1" />
+      <Label text="coordonnée X" GridPane.rowIndex="2" />
+      <Label text="coordonnée Y" GridPane.rowIndex="3" />
+      <ToggleButton fx:id="stationDisplay" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="ToggleButton" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="5.0" top="10.0" />
+         </GridPane.margin>
+      </ToggleButton>
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="5.0" top="10.0" />
+         </GridPane.margin>
+      </Button>
+      <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Button" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets top="5.0" />
+         </GridPane.margin>
+      </Button>
+      <TextField fx:id="stationName" GridPane.columnIndex="1" />
+      <TextField fx:id="stationLabel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="stationCoordX" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="stationCoordY" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
